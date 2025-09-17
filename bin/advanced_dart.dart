@@ -1,5 +1,7 @@
-import 'package:advanced_dart/advanced_dart.dart' as advanced_dart;
+import 'package:advanced_dart/lang_feature_and_syntax_deep_dive/generic.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${advanced_dart.calculate()}!');
+  Box<int> intBox = Box<int>(42);
+  print('Initial intBox value: ${intBox.getValue()}');
+  intBox.setValue(100);
 }

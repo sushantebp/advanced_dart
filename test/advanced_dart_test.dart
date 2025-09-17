@@ -1,8 +1,9 @@
-import 'package:advanced_dart/advanced_dart.dart';
+import 'package:advanced_dart/lang_feature_and_syntax_deep_dive/generic.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
+  test('generic', () {
+    Box<String> stringBox = Box<String>("Frank Sinatra");
+    stringBox.setValue("Elvis Presley");
   });
 }
