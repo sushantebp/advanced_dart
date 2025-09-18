@@ -11,18 +11,19 @@ void main() {
   group("arithmetic testing", () {
     test("addition", () => expect(add(2, 3), 5));
     test("subtraction", () => expect(sub(7, 2), 5));
-  // test('generic', () {
-  //   Box<String> stringBox = Box<String>("Frank Sinatra");
-  //   stringBox.setValue("Elvis Presley");
-  // });
+    // test('generic', () {
+    //   Box<String> stringBox = Box<String>("Frank Sinatra");
+    //   stringBox.setValue("Elvis Presley");
+    // });
 
-  test("mixins", () {
-    final service = Service();
-    service.fetchData();
-  });
+    test("mixins", () {
+      final service = Service();
+      service.fetchData();
+    });
 
-  test("extension", () {
-    print("45".toInt());
-    print('superman'.capitalize());
+    test("extension", () {
+      print("45".toInt());
+      print('superman'.capitalize());
+    });
   });
 }
