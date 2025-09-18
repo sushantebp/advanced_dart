@@ -1,4 +1,4 @@
-import 'package:advanced_dart/dart_singleton.dart';
+import 'package:advanced_dart/design_pattern/dart_singleton.dart';
 import 'package:test/test.dart';
 
 int add(int a, int b) => a + b;
