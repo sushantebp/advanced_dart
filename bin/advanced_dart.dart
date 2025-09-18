@@ -1,4 +1,9 @@
+import 'dart:io' as io;
+
 void main(List<String> arguments) {
-  print("All the features and usecases are implemented and tested.");
-  print("use 'dart test'");
+  late String username;
+
+  print("Enter your username");
+  username = io.stdin.readLineSync()!;
+  print('well hello there, $username');
 }
