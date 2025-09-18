@@ -1,16 +1,13 @@
-import 'package:advanced_dart/async-and-concurrent-programming/flutter_streams.dart';
-import 'package:advanced_dart/async-and-concurrent-programming/future_internals.dart';
 import 'package:test/test.dart';
 
+int add(int a, int b) => a + b;
+int sub(int a, int b) => a - b;
 void main() {
-  test("future interval", () async {
-    expect(futureInternal(), completes);
-  });
-  test("fetch data", () async {
-    expect(getData(), completes);
-  });
-
-  test("single sub stream", () {
-    numbers.listen((data) => print("Listening on single subscription : $data"));
+  // test("single sub stream", () {
+  //   expect(numbers, emitsInOrder([3, 4, 5, 6, 7, 8, emitsDone]));
+  // });
+  group("arithmetic testing", () {
+    test("addition", () => expect(add(2, 3), 5));
+    test("subtraction", () => expect(sub(7, 2), 5));
   });
 }
